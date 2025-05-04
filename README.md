@@ -89,9 +89,9 @@ Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes
 
 **Cristhian Campelo**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Cristhian%20Campelo-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/cristhian-campelo)
-[![GitHub](https://img.shields.io/badge/GitHub-KrisKinze-black?style=flat-square&logo=github)](https://github.com/KrisKinze)
-[![Instagram](https://img.shields.io/badge/Instagram-kriskinze-purple?style=flat-square&logo=instagram)](https://www.instagram.com/kriskinze/)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/cristhian-campelo)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KrisKinze)
+[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/kriskinze/)
 
 ## 📞 Contato
 
