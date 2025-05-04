@@ -1,0 +1,239 @@
+#projetos {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-image: url(../img/background/image-background-projetos.jpg);
+    background-size: cover;  
+    width: 100%;
+}
+
+.projetos-explicacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 60%;
+    font-size: 1rem;
+    color: #444444;
+}
+
+.projetos-explicacao-titulo {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.projetos__linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 5rem 5rem;
+    gap: 20px;
+    width: 70%;
+
+
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255); 
+    z-index: 1; 
+    border: 2px solid transparent; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+}
+
+.projetos__linha-imagem {
+    padding: 40px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+}
+
+.projetos__linha-imagem img {
+    width: 100%;
+    border-radius: 20px;
+    height: 100%; 
+    max-width: 100%; 
+    animation: colorChange-border 5s infinite;
+    border: 2px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projetos__linha-descricao {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projetos__linha-descricao-titulo{
+    font-weight: bold;
+    text-align: left;
+    margin: 30px 0;
+    color: white;
+    animation: colorChange-projetos-titulo 5s infinite;
+    border-radius: 10px;
+}
+
+.projetos__linha-descricao-titulo h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.projetos__linha-descricao-status{
+    font-size: 1em;
+    margin: 1em 0;
+    text-align: left;
+    color: white;
+    animation: colorChange-projetos-status 5s infinite;
+    border-radius: 10px;
+}
+
+.projetos__linha-descricao-texto {
+    font-size: 1em;
+    color: #444444;
+    margin: 1em 0;
+    text-align: left;
+}
+
+.projetos__linha-descricao-botao {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#projetos-descricao-botao-a {
+    animation: colorChange-projetos-botao 5s infinite;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+    padding: 7px;
+    animation: colorChange-botao-curriculo 5s infinite;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.4em;
+    font-size: 1em;
+}
+
+#projetos-descricao-botao-svg {
+    width: 1.2em; /* Define a largura do SVG do icone do github */
+    height: 1.2em;
+}
+
+#projetos-descricao-botao-a:hover {
+    background-color: #ff7620;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/*============================== Responsividade para telas menores=========================== */
+
+@media (max-width: 1300px) {
+    .projetos__linha {
+        flex-direction: column;
+        padding: 0 2rem;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .projetos__linha-descricao , .projetos__linha-imagem {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+
+
+    .projetos-explicacao {
+        max-width: 80%;
+        font-size: 15px;
+    }
+
+    .projetos-explicacao-titulo {
+        font-size: 30px;
+    }
+
+    .projetos__linha {
+        flex-direction: column;
+        padding: 0 2rem;
+        gap: 2rem;
+        align-items: center;
+        width: 100%;
+    }
+
+    .projetos__linha-descricao , .projetos__linha-imagem {
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        align-items: center;
+    }
+
+    .projetos__linha-descricao-titulo h2 {
+        font-size: 25px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 2rem;
+    }
+
+    .projetos__linha-descricao-status {
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 2rem;
+    }
+
+    .projetos__linha-descricao-texto {
+        font-size: 15px;
+        padding: 0 2rem;
+    }
+
+    #projetos-descricao-botao-a {
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #projetos.container {
+        padding: 40px 0;
+        
+    }
+
+    .projetos__linha {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .projetos-explicacao {
+        max-width: 80%;
+        font-size: 15px;
+    }
+
+    .projetos__linha-descricao , .projetos__linha-imagem {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        align-items: center;
+    }
+
+}
+
+

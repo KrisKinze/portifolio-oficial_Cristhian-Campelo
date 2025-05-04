@@ -1,0 +1,116 @@
+/* Estilo base do cabeçalho */
+.header__conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #010326;
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 1em;
+}
+
+.header__conteudo-esquerdo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5em;
+  margin-left: 40px;
+  padding: 0.8em 0;
+}
+
+.header__conteudo-esquerdo-foto img {
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header__conteudo-esquerdo-nome {
+    display: flex;
+  font-weight: bold;
+  color: rgb(218, 218, 218);
+  text-align: center;
+  align-items: center;
+
+}
+
+/* Estilo do menu */
+.header__conteudo-direito-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3em;
+  margin-right: 50px;
+  padding: 0.8em 0;
+}
+
+.header__conteudo-direito-menu a {
+  text-decoration: none;
+  color: rgb(218, 218, 218);
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__conteudo-direito-menu a:hover {
+  color: #0367A6;
+  transform: scale(1.1);
+}
+
+/* Estilo do menu hambúrguer */
+.header__hamburguer {
+    display: none; 
+    flex-direction: column;
+    gap: 0.3em;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.header__hamburguer span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ===========RESPONSIVIDADE========== */
+@media (max-width: 620px) {
+
+
+  .header__conteudo p, .header__conteudo a {
+    font-size: 17px;
+  }
+
+    .header__conteudo-direito-menu {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0; /* Garante que o menu comece no lado esquerdo */
+        right: 0; /* Garante que o menu termine no lado direito */
+        background-color: #010326;
+        width: 100%; /* Faz o menu ocupar toda a largura */
+        padding: 1em 0;
+        gap: 1em;
+        text-align: center;
+        margin: 0; /* Remove margens que possam causar deslocamento */
+    }
+
+    .header__conteudo-esquerdo{
+      margin-left: 10px;
+    }
+
+    .header__conteudo-direito-menu.active {
+        display: flex;
+    }
+
+    .header__hamburguer {
+        display: flex; 
+    }
+
+
+}

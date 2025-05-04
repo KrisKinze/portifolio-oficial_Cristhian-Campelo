@@ -1,0 +1,107 @@
+#home {
+  display: flex;
+  position: relative; /* Necessário para posicionar elementos absolutos */
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh;
+  padding: 0;
+}
+
+.home__redes {
+  position: absolute; 
+  left: 0; /* Fixa na extremidade esquerda */
+  top: 50%; 
+  transform: translateY(-50%); /* Ajusta o deslocamento para centralizar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.home__redes-icons {
+    color: var(--cor-secundaria);
+    padding: 10px;
+}
+
+/*valores de tamanho responsivo*/
+.home__redes-icons svg {
+  width: clamp(20px, 2vw, 40px); 
+  height: auto; 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.home__redes-icons:hover {
+    color: #0367A6;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.home__boasvindas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 70%;
+}
+
+#home__boasvindas-titulo {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--cor-secundaria);
+  margin-bottom: 0.3em;
+}
+
+#home__boasvindas-texto {
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 1em;
+  line-height: 1.5;
+  overflow: hidden; 
+  white-space: nowrap; 
+}
+
+
+
+#home__boasvindas-button {
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #754A68;
+  color: white;
+  padding: 0.7em 4em;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; /* Garante que a transição seja suave */
+  animation: colorChange-home-boasvindas 5s infinite;
+}
+
+#home__boasvindas-button:hover {
+  background-color: #0367A6;
+  transform: scale(1.1);
+}
+
+/*================RESPONSIVE=================*/
+
+@media (max-width: 1050px) {
+  #home__boasvindas-texto {
+    white-space: normal; /* Permite que o texto quebre em várias linhas */
+    overflow: visible; /* Permite que o texto seja visível em várias linhas */
+  }
+}
+
+@media (max-width: 600px) {
+  #home__boasvindas-titulo {
+    max-width: 90%;
+    font-size: 30px;
+  }
+  #home__boasvindas-texto {
+    font-size: 15px;
+  }
+}

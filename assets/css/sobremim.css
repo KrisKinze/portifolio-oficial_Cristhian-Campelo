@@ -1,0 +1,251 @@
+#sobremim {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: #fefefe;
+}
+
+
+
+.sobremim__superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    padding: 20px;    
+    width: 100%;
+}
+
+.sobremim__superior-explicacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    color: #444444;
+    max-width: 60%;
+}
+
+.sobremim__superior-explicacao-titulo {
+    font-weight: bold;
+    margin-bottom: 20px;
+    white-space: nowrap; 
+}
+
+.sobremim__inferior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;    
+    padding: 0 10rem;
+    width: 100%;
+    gap: 3rem;
+}
+
+.sobremim__inferior-esquerdo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 50%;
+}
+
+.sobremim__inferior-apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    gap: 2rem;
+}
+
+#sobremim__inferior-apresentacao-titulo {
+    font-weight: bold;
+    text-align: left;
+
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+#sobremim__inferior-apresentacao-texto  {
+    font-size: 1em;
+    color: #444444;
+    margin: 1em 0;
+    text-align: left;
+}
+
+.sobremim__inferior-apresentacao-redes{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    text-align: center;
+}
+
+.sobremim__redes-icons {
+    color: black;
+   transition: all 0.3s ease-in-out;
+}
+
+.sobremim__redes-icons:hover {
+   color: #0367A6;
+   transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.sobremim__inferior-direito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    max-width: 50%;
+}
+
+
+.sobremim__inferior-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    padding: 20px;
+    width: 100%;
+    gap: 2rem;
+}
+
+#sobremim__inferior-skills-titulo {
+    font-weight: bold;
+    text-align: right;
+}
+
+.sobremim__inferior-skills-icones {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    gap: 1.5rem;
+    font-size: 1em;
+    color: #444444;
+    margin: 1em 0;
+    justify-content: flex-end;
+    max-width: 100%; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; /* Compatibilidade adicional para quebra de palavras */
+}
+
+.skills-icones {
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255); 
+    z-index: 1; 
+    border: 2px solid transparent; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.skills-icones:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.container-curriculo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    padding: 20px;
+    width: 100%;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.botao-curriculo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    animation: colorChange-botao-curriculo 5s infinite;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.botao-curriculo:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/*================RESPONSIVIDADE=================*/
+
+@media (max-width: 900px) {
+
+    .sobremim__superior-explicacao {
+        max-width: 100%;
+    }
+
+    .sobremim__superior-explicacao-titulo {
+        font-size: 30px;
+    }
+    #sobremim h2 {
+        font-size: 25px;
+    }
+
+    #sobremim p {
+        font-size: 15px;
+    }
+
+
+    .sobremim__inferior {
+        flex-direction: column;
+        padding: 0 2rem;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .sobremim__inferior-direito , .sobremim__inferior-esquerdo {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .skills-icones {
+        font-size: 15px;
+    }
+
+    .container-curriculo {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .botao-curriculo {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .sobremim__superior {
+        padding: 0;
+    } 
+
+}

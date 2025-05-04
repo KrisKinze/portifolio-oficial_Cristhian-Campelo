@@ -1,0 +1,235 @@
+
+@keyframes colorChange-home-boasvindas {
+    0% {
+        background-color: #744863
+    }
+    50% {
+        background-color: #EC9F69;
+    }
+    100% {
+        background-color: #744863;
+    }
+}
+
+@keyframes colorChange-botao-curriculo {
+    0% {
+        background-color: #ff009d
+    }
+
+    25% {
+        background-color: #bf00ff;
+    }
+
+    50% {
+        background-color: #00bfff;
+    }
+
+    75% {
+        background-color: #ff6a00;
+    }
+
+    100% {
+        background-color: #ff009d
+    }
+}
+
+
+
+
+/* animação para mudar a cor do texto e titulos */
+
+@keyframes colorChange {
+    0% {
+        color: #ff009d;
+    }
+    50% {
+        color: #009dff;
+    }
+    100% {
+        color: #ff009d;
+    }
+}
+
+@keyframes colorChange-projetos-titulo {
+    0% {
+        color: #ff009d;
+    }
+    50% {
+        color: #009dff;
+    }
+    100% {
+        color: #ff009d;
+    }
+}
+
+@keyframes colorChange-projetos-status {
+    0% {
+        color: #ff009d;
+    }
+    50% {
+        color: #009dff;
+    }
+    100% {
+        color: #ff009d;
+    }
+}
+
+@keyframes colorChange-skills-icones{
+    0% {
+        color: #ff0000;
+    }
+
+    10% {
+        color: #ff5e00;
+    }
+    20% {
+        color: #ffb700;
+    }
+    30% {
+        color: #a2ff00;
+    }
+    40% {
+        color: #00ff2f;
+    }
+
+    50% {
+        color: #00ffbf;
+    }
+    60% {
+        color: #0091ff;
+    }
+    70% {
+        color: #002fff;
+    }
+    80% {
+        color: #6200ff;
+    }
+    90% {
+        color: #cc00ff;
+    }
+    60% {
+        color: #ff00ff;
+    }
+
+    70% {
+        color: #ff00bf;
+    }
+    80% {
+        color: #ff0059;
+    }
+    90% {
+        color: #ff0026;
+    }
+
+    100% {
+        color: #ff0000;
+    }
+}
+
+@keyframes colorChange-border {
+
+        0% {
+            border-color: #ff0000;
+        }
+    
+        10% {
+            border-color: #ff5e00;
+        }
+        20% {
+            border-color: #ffb700;
+        }
+        30% {
+            border-color: #a2ff00;
+        }
+        40% {
+            border-color: #00ff2f;
+        }
+    
+        50% {
+            border-color: #00ffbf;
+        }
+        60% {
+            border-color: #0091ff;
+        }
+        70% {
+            border-color: #002fff;
+        }
+        80% {
+            border-color: #6200ff;
+        }
+        90% {
+            border-color: #cc00ff;
+        }
+        60% {
+            border-color: #ff00ff;
+        }
+    
+        70% {
+            border-color: #ff00bf;
+        }
+        80% {
+            border-color: #ff0059;
+        }
+        90% {
+            border-color: #ff0026;
+        }
+    
+        100% {
+            border-color: #ff0000;
+        }
+    }
+
+
+/* Exemplo de uso:
+.texto-animado {
+    animation: colorChange 2s infinite;
+} 
+*/
+
+/* animação para o texto aparecer como se estivesse sendo digitado */
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes deleting {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+@keyframes pause {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Exemplo de uso: 
+#home__boasvindas-texto {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 1em;
+    line-height: 1.5;
+    overflow: hidden; 
+    white-space: nowrap; 
+    border-right: 2px solid white; 
+    animation: typing 4s steps(30, end), deleting 4s steps(30, end) 4s infinite; 
+}
+*/

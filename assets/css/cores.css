@@ -1,0 +1,23 @@
+/*Paleta de Cores
+#FA9D69
+#FACA69
+#FAB769
+#FA8469
+#FADC69
+#FAECDC
+*/
+
+/* Color Theme Swatches in RGBA */
+.Desert-landscape-with-blue-sky-on-the-background-1-rgba { color: rgba(3, 119, 165, 1); }
+.Desert-landscape-with-blue-sky-on-the-background-2-rgba { color: rgba(2, 82, 114, 1); }
+.Desert-landscape-with-blue-sky-on-the-background-3-rgba { color: rgba(3, 156, 191, 1); }
+.Desert-landscape-with-blue-sky-on-the-background-4-rgba { color: rgba(216, 127, 95, 1); }
+.Desert-landscape-with-blue-sky-on-the-background-5-rgba { color: rgba(191, 93, 84, 1); }
+
+:root {
+    --cor-primaria: #F2C6A1; 
+    --cor-secundaria: #754A68;
+    --cor-terciaria: #0367A6;
+    --cor-quaternaria: #011140; 
+    --cor-quintaria: #010326;
+}
